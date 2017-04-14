@@ -1,0 +1,28 @@
+{
+  "name": "quick-unit-converter",
+  "version": "0.0.0",
+  "description": "A npm library for basic unit conversions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeff-li/unit-converter.git"
+  },
+  "keywords": [
+    "unit",
+    "converter"
+  ],
+  "author": "Jeff Li <“jeff.weizhong.li@gmail.com”>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeff-li/unit-converter/issues"
+  },
+  "homepage": "https://github.com/jeff-li/unit-converter#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "mocha": "^3.2.0"
+  }
+}
