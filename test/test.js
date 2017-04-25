@@ -1,12 +1,18 @@
 'use strict';
 
 var expect = require('chai').expect;
-var numFormatter = require('../lib/converter');
+var converter = require('../lib/converter');
 
 describe('#numFormatter', function() {
-    it('should convert single digits', function() {
-        var result = numFormatter(1);
-        expect(result).to.equal('1');
+    it('should return a number', function() {
+        var result = converter(1, 'kg').to('g');
+        expect(result).to.equal(123);
+    });
+
+    it('should return undefined if value is not a number', function() {
+        var result = converter('a', 'kg').to('g');
+        expect(result).to.equal(undefined);
     });
 
 });
+
