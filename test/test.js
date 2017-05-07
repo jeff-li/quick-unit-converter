@@ -30,5 +30,10 @@ describe('#numFormatter', function() {
         expect(result).to.equal(0.2);
     });
 
+    it('should return convert C to F', function() {
+        var result = converter(200, 'C').to('F');
+        expect(result).to.equal(392);
+    });
+
 });
 
