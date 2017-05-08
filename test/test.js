@@ -30,10 +30,24 @@ describe('#numFormatter', function() {
         expect(result).to.equal(0.2);
     });
 
-    xit('should return convert C to F', function() {
+    it('should return convert C to F', function() {
         var result = converter(200, 'C').to('F');
         expect(result).to.equal(392);
     });
+    
+    it('should return convert F to K', function() {
+        var result = converter(60, 'F').to('K');
+        expect(result).to.equal(288.706);
+    });
 
+    it('should return convert C to K', function() {
+        var result = converter(20, 'C').to('K');
+        expect(result).to.equal(293.15);
+    });
+
+    it('should return convert K to C', function() {
+        var result = converter(300, 'K').to('C');
+        expect(result).to.equal(26.85);
+    });
 });
 
