@@ -1,7 +1,7 @@
 'use strict';
 
 var expect = require('chai').expect;
-var getSIUnits = require('../lib/definitions/si-mapping.js')
+var getSIUnits = require('../lib/definitions/si.js')
 
 describe('SI Generator test', function() {
     it('should return a a non-empty object', function() {
