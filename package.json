@@ -1,6 +1,6 @@
 {
   "name": "quick-unit-converter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A npm library for basic unit conversions.",
   "main": "index.js",
   "scripts": {
